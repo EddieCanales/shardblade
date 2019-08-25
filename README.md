@@ -31,6 +31,6 @@ const shardbearers = [{
 shardbearers.forEach(shardbearer => {
   // let's decide which shard to go to based on the shardbearer's name
   const destinationShard = shardblade.slice(shardbearer.name, TOTAL_SHARDS);
-  console.log(`${shardbearer} should go to shard #${destinationShard}`);
+  console.log(`${shardbearer.name} should go to shard #${destinationShard}`);
 });
 ```

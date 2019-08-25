@@ -12,11 +12,11 @@ function _hash(str) {
 }
 
 // uses murmurhash3 for consistent hashing to distribute your key to a consistent shard
-function shard(key, numShards) {
+function slice(key, numShards) {
   const shardIndex = _hash(key) % numShards;
   return shardIndex;
 }
 
 module.exports = {
-  shard,
+  slice,
 };
