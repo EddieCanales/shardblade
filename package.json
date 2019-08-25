@@ -1,0 +1,23 @@
+{
+  "name": "shardblade",
+  "version": "1.0.0",
+  "description": "Shardblade is a simple library for doing consistent sharding. It uses MurmurHash3 consistent hashing in order to distribute your keys evenly and consistently.",
+  "author": "Eddie Canales",
+  "license": "MIT",
+  "keywords": [
+    "hashing",
+    "consistent hashing",
+    "sharding",
+    "load balancing",
+    "murmurhash3"
+  ],
+  "main": "./src/",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "1.17.1"
+  },
+  "dependencies": {}
+}
