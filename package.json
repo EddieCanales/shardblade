@@ -11,6 +11,7 @@
     "load balancing",
     "murmurhash3"
   ],
+  "repository": "https://github.com/FabledWeb/shardblade",
   "main": "./src/",
   "readmeFilename": "README.md",
   "scripts": {
