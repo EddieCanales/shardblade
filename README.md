@@ -20,16 +20,13 @@ Given a key and the number of shards, returns the shard for that key. This uses 
 const shardblade = require('shardblade');
 const TOTAL_SHARDS = 10;
 
-const shardbearers = [
-  {
-    name: 'Dalinar',
-    shardbladeName: 'Oathbringer',
-  },
-  {
-    name: 'Elhokar',
-    shardbladeName: 'Sunraiser',
-  },
-];
+const shardbearers = [{
+  name: 'Dalinar',
+  shardbladeName: 'Oathbringer'
+}, {
+  name: 'Elhokar',
+  shardbladeName: 'Sunraiser'
+}];
 
 shardbearers.forEach(shardbearer => {
   // let's decide which shard to go to based on the shardbearer's name
