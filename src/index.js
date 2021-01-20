@@ -16,7 +16,7 @@ function slice(key, numShards) {
   // strigify key if possible to allow for multiple input data types
   let keyClean = key;
   if (typeof key === 'object') {
-    keyClean = key.toString();
+    keyClean = JSON.stringify(key);
   } else if (key !== undefined) {
     keyClean = key.toString();
   }
