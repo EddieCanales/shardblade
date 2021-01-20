@@ -21,7 +21,7 @@ function slice(key, numShards) {
     keyClean = key.toString();
   }
 
-  const shardIndex = _hash(key) % numShards;
+  const shardIndex = _hash(keyClean) % numShards;
   return shardIndex;
 }
 
