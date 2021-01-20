@@ -2,7 +2,7 @@
 
 Shardblade is a simple library for doing consistent sharding. It uses MurmurHash3 consistent hashing in order to distribute your keys evenly and consistently.
 
-This allows you to, given a string, produce the same shard every time. This should give you a reasonably even distribution of sharding for any inputs AND for any input the same shard should always be produced.
+This allows you to, given a value, produce the same shard every time. This should give you a reasonably even distribution of sharding for any inputs AND for any input the same shard should always be produced.
 
 To learn more about MurMurHash3, check out the wikipedia page: https://en.wikipedia.org/wiki/MurmurHash
 
@@ -20,13 +20,16 @@ Given a key and the number of shards, returns the shard for that key. This uses 
 const shardblade = require('shardblade');
 const TOTAL_SHARDS = 10;
 
-const shardbearers = [{
-  name: 'Dalinar',
-  shardbladeName: 'Oathbringer'
-}, {
-  name: 'Elhokar',
-  shardbladeName: 'Sunraiser'
-}];
+const shardbearers = [
+  {
+    name: 'Dalinar',
+    shardbladeName: 'Oathbringer',
+  },
+  {
+    name: 'Elhokar',
+    shardbladeName: 'Sunraiser',
+  },
+];
 
 shardbearers.forEach(shardbearer => {
   // let's decide which shard to go to based on the shardbearer's name
