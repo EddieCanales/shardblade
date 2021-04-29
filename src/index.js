@@ -13,7 +13,15 @@ function _hash(str) {
 
 // uses murmurhash3 for consistent hashing to distribute your key to a consistent shard
 function slice(key, numShards) {
-  const shardIndex = _hash(key) % numShards;
+  // strigify key if possible to allow for multiple input data types
+  let keyClean = key;
+  if (typeof key === 'object') {
+    keyClean = JSON.stringify(key);
+  } else if (key !== undefined) {
+    keyClean = key.toString();
+  }
+
+  const shardIndex = _hash(keyClean) % numShards;
   return shardIndex;
 }
 

@@ -2,7 +2,7 @@
 
 Shardblade is a simple library for doing consistent sharding. It uses MurmurHash3 consistent hashing in order to distribute your keys evenly and consistently.
 
-This allows you to, given a string, produce the same shard every time. This should give you a reasonably even distribution of sharding for any inputs AND for any input the same shard should always be produced.
+This allows you to, given a value, produce the same shard every time. This should give you a reasonably even distribution of sharding for any inputs AND for any input the same shard should always be produced.
 
 To learn more about MurMurHash3, check out the wikipedia page: https://en.wikipedia.org/wiki/MurmurHash
 
