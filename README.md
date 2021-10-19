@@ -17,7 +17,7 @@ Given a key and the number of shards, returns the shard for that key. This uses 
 #### example
 
 ```javascript
-const shardblade = require('shardblade');
+const shardblade = require('shardblade'); // OR: import shardblade from 'shardblade' (if using ES Modules)
 const TOTAL_SHARDS = 10;
 
 const shardbearers = [{
