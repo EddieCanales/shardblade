@@ -13,6 +13,7 @@
   ],
   "repository": "https://github.com/FabledWeb/shardblade",
   "main": "./src/",
+  "typings": "./types/index.d.ts",
   "readmeFilename": "README.md",
   "scripts": {
     "test": "echo \"no tests\" && exit 0"
