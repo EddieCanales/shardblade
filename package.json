@@ -1,6 +1,6 @@
 {
   "name": "shardblade",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Shardblade is a simple library for doing consistent sharding. It uses MurmurHash3 consistent hashing in order to distribute your keys evenly and consistently.",
   "author": "Eddie Canales",
   "license": "MIT",
